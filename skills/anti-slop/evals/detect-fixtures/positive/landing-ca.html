@@ -1,0 +1,20 @@
+<!-- expect: D-28 D-50 D-58 CA-08 W-18 W-30 -->
+<!doctype html>
+<html lang="ca">
+<head><style>
+body { cursor: none; }
+body::after { content: ""; position: fixed; top: 0; animation: grow linear both; animation-timeline: scroll(); }
+@media (prefers-reduced-motion: reduce) { body::after { animation: none; } }
+</style></head>
+<body>
+<h1>Dissenyem cuines.<br><span class="accent">Per cuinar-hi cada dia.</span></h1>
+<h2 data-split>12 receptes, un ingredient cadascuna</h2>
+<p>Preus del mercat d'enguany. Són estimacions, no una garantia.</p>
+<h2>40 cursos, cadascun amb el seu professor</h2>
+<p>Els preus són els de botiga, no la tarifa de majorista.</p>
+<p>Les hores de cada curs són les de l'aula, mai una estimació.</p>
+<a href="/cursos">Mira els cursos</a>
+<a href="/calendari">Entrar al calendari</a>
+<button>Veure el vídeo</button>
+</body>
+</html>

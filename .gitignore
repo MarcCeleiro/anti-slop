@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+skills/anti-slop/evals/results/
+evals/results/

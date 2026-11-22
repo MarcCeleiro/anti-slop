@@ -1,0 +1,14 @@
+/* expect: D-03 D-07 D-08 D-10 D-11 D-12 D-14 D-20 D-21 D-22 D-24 D-51 D-53 D-54 D-56 D-60 */
+body { font-family: Inter, sans-serif; background: #faf7f2; }
+.callout { border-left: 4px solid #6366f1; padding: 16px; }
+.hero { background: linear-gradient(135deg, #7c3aed, #3b82f6); }
+.title { background-clip: text; -webkit-background-clip: text; color: transparent; }
+.glass { backdrop-filter: blur(12px); }
+.brutal { box-shadow: 4px 4px 0 #000; }
+.glow { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 11px; }
+.pop { transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+.grow { transition: width 0.3s ease, height 0.3s ease; }
+.dot { animation: pulse 2s infinite; }
+@keyframes pulse { 50% { opacity: 0.4; } }
+button { outline: none; }

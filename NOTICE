@@ -1,0 +1,14 @@
+anti-slop
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This project includes rules and ideas adapted from Impeccable
+(https://github.com/pbakaus/impeccable), Copyright 2025 Paul Bakaus,
+licensed under the Apache License, Version 2.0. The adapted rules were
+reworded, renumbered, merged and extended. See
+skills/anti-slop/references/sources.md for the full list.
+
+It also adapts ideas from the Anthropic frontend-design skill
+(Apache License 2.0, Copyright Anthropic), the Anthropic cookbook
+(MIT License, Copyright Anthropic), stop-slop by Hardik Pandya
+(MIT License), humanizer by Siqi Chen (MIT License) and the Wikipedia
+guide "Signs of AI writing" (CC BY-SA 4.0, reformulated, no text copied).

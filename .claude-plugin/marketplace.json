@@ -1,0 +1,12 @@
+{
+  "name": "anti-slop",
+  "owner": { "name": "anti-slop contributors" },
+  "plugins": [
+    {
+      "name": "anti-slop",
+      "source": "./",
+      "description": "Catalog, detector and review pass against generic AI-generated design and writing (English, Catalan, Spanish).",
+      "version": "1.0.0"
+    }
+  ]
+}

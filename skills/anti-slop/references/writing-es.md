@@ -61,7 +61,7 @@ Public lists of AI-writing tells exist mostly for English. The Spanish entries c
 - What:
   - Opening marks «¿» and «¡» are required. Their absence in finished text looks careless.
   - Quotation marks: avoid them (W-19). Name buttons, labels and titles without quotes. For a real quotation, straight quotes are enough.
-  - No raya in prose (W-11), except in dialogue.
+  - No raya and no spaced middle dot as a separator in prose (W-11), except the raya in dialogue.
   - In letters the salutation takes a colon («Estimada Ana:»), not a comma.
 - Detect: questions without ¿ (`ES-04`), « » and “ ” (`W-19`), dashes (`W-11`).
 - Exceptions: informal chat.

@@ -84,13 +84,13 @@ These are the most frequent problems and the first thing to check.
 - Detect: any `;` in prose (outside code, citations and formulas).
 - Exceptions: complex lists whose items contain commas, legal and academic text that follows its own conventions.
 
-### W-11 · Em dash in prose · high
+### W-11 · Em dash and middle dot as separators · high
 
-- What: the em dash (—) used as a pause, for asides or for dramatic reveals, spaced or not.
-- Why: it is the most cited generated tell of 2023–2026. Readers who have learnt to spot it stop trusting the text at the first one, so density no longer matters.
-- Bad → good: "The result — after weeks of testing — was clear." → "After weeks of testing, the result was clear."
-- Detect: any em dash in prose, and any spaced en dash used the same way.
-- Exceptions: dialogue in Catalan and Spanish fiction, ranges with an en dash ("2023–2026"), a proper name that contains one.
+- What: the em dash (—) used as a pause, for asides or for dramatic reveals, and the spaced middle dot ( · ) used to string pieces together in subjects, titles, labels, metadata and running text.
+- Why: the em dash is the most cited generated tell of 2023–2026, and the spaced middle dot is its sibling in subjects and labels. Readers who have learnt to spot them stop trusting the text at the first one, so density no longer matters.
+- Bad → good: "The result — after weeks of testing — was clear." → "After weeks of testing, the result was clear." "MOOC v2 · Staging ready for review" → "MOOC v2 staging ready for review".
+- Detect: any em dash in prose, any spaced en dash used the same way, any spaced middle dot.
+- Exceptions: dialogue in Catalan and Spanish fiction, ranges with an en dash ("2023–2026"), a proper name that contains one, the Catalan ela geminada (l·l).
 
 ### W-12 · Colon hinge · medium
 

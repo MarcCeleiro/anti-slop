@@ -74,11 +74,11 @@ Public lists of AI-writing tells exist mostly for English. The Catalan entries b
 
 - What: English punctuation habits in Catalan text.
   - Quotation marks: avoid them (W-19). Name buttons, labels and titles without quotes. For a real quotation, straight quotes are enough.
-  - No em dash in prose (W-11). Rewrite the aside with commas, a parenthesis or a new sentence.
+  - No em dash and no spaced middle dot as a separator (W-11). Rewrite the aside with commas, a parenthesis or a new sentence. The ela geminada (l·l) is spelling, not a separator.
   - No semicolons (W-10). Colons as hinges (W-12) are just as foreign in Catalan as in English.
   - In letters the salutation usually takes a comma («Benvolguda Anna,»).
   - Spaces: no space before «?», «!», «:», «;».
-- Detect: « » and “ ” (`W-19`), em dashes (`W-11`), semicolons (`W-10`).
+- Detect: « » and “ ” (`W-19`), em dashes and spaced middle dots (`W-11`), semicolons (`W-10`).
 - Exceptions: code, URLs, data.
 
 ### CA-06 · Capitals · medium

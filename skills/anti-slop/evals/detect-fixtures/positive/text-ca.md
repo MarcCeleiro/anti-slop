@@ -20,3 +20,5 @@ La biblioteca obre a les nou. Els dissabtes no. El bar sí.
 Hem revisat totes les pàgines del lloc web: el formulari de contacte encara envia els correus a una adreça antiga.
 
 Per entrar-hi, obre «Usuaris» i clica «Switch To» al costat de l'alumne — la sessió canvia a l'instant.
+
+Avís important · nova versió del col·legi

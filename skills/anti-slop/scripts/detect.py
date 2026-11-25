@@ -76,7 +76,7 @@ RULES = {
     "W-01": ("high", "Comma splice"),
     "W-03": ("medium", "Choppy chain of short sentences"),
     "W-10": ("high", "Semicolon"),
-    "W-11": ("high", "Em dash in prose"),
+    "W-11": ("high", "Em dash or middle dot separator"),
     "W-19": ("high", "Quotation marks as habit"),
     "W-12": ("medium", "Colon hinge"),
     "W-13": ("high", "Negative parallelism"),
@@ -650,8 +650,9 @@ def check_text(u: Unit, lang, add, file_lang):
                 add("W-10", u.line, "Semicolon in prose", s)
                 break
     dashes = len(re.findall(r"—|\s–\s|\s--\s", plain))
-    if dashes and not plain.lstrip().startswith(("—", "–")):
-        add("W-11", u.line, f"{dashes} em dash(es) in prose", plain)
+    dots = len(re.findall(r"\s·\s", plain))
+    if (dashes and not plain.lstrip().startswith(("—", "–"))) or dots:
+        add("W-11", u.line, f"{dashes} em dash(es) and {dots} middle dot separator(s)", plain)
     quotes = len(re.findall(r"«[^»\n]{1,120}»|“[^”\n]{1,120}”", plain))
     if quotes:
         add("W-19", u.line, f"{quotes} pair(s) of « » or “ ” quotes", plain)

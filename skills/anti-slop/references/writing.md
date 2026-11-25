@@ -9,7 +9,7 @@ None of these signs proves anything alone. Plain, careful human writing also use
 ## Contents
 
 1. Sentence construction: W-01 to W-07
-2. Punctuation and rhetorical tics: W-10 to W-18
+2. Punctuation and rhetorical tics: W-10 to W-19
 3. Voice and filler: W-20 to W-29
 4. Headings and format: W-30 to W-39
 5. Language and register: W-40 to W-44
@@ -76,21 +76,21 @@ These are the most frequent problems and the first thing to check.
 
 ## 2. Punctuation and rhetorical tics
 
-### W-10 · Semicolon as style · medium
+### W-10 · Semicolon as style · high
 
 - What: semicolons used to join clauses for rhythm, especially in parallel structures ("Mondays are for planning; Fridays, for reviews").
-- Why: in everyday prose, emails and UI text the semicolon is rare. A sudden density of them is a strong generated tell, and many readers find it stiff.
+- Why: in everyday prose, emails and UI text the semicolon is rare. Even one reads as a generated tell, and many readers find it stiff.
 - Bad → good: "The upload failed twice; the file was too large." → "The upload failed twice because the file was too large."
 - Detect: any `;` in prose (outside code, citations and formulas).
 - Exceptions: complex lists whose items contain commas, legal and academic text that follows its own conventions.
 
-### W-11 · Em dash as habit · medium
+### W-11 · Em dash in prose · high
 
-- What: the em dash (—) used several times per page as a general-purpose pause, often spaced, for asides and dramatic reveals.
-- Why: it is the most cited generated tell of 2023–2026. Some languages use dashes for asides or dialogue, but never at this density.
+- What: the em dash (—) used as a pause, for asides or for dramatic reveals, spaced or not.
+- Why: it is the most cited generated tell of 2023–2026. Readers who have learnt to spot it stop trusting the text at the first one, so density no longer matters.
 - Bad → good: "The result — after weeks of testing — was clear." → "After weeks of testing, the result was clear."
-- Detect: more than about one em dash per 150 words, or any spaced em dash in UI copy.
-- Exceptions: dialogue in Catalan and Spanish fiction, ranges where the language uses an en dash, a single deliberate aside.
+- Detect: any em dash in prose, and any spaced en dash used the same way.
+- Exceptions: dialogue in Catalan and Spanish fiction, ranges with an en dash ("2023–2026"), a proper name that contains one.
 
 ### W-12 · Colon hinge · medium
 
@@ -147,6 +147,14 @@ These are the most frequent problems and the first thing to check.
 - Bad → good: "Average wait at each clinic. Estimated, not measured." → keep the caveat only where a wrong reading is likely and costly, and state it once in the methods note.
 - Detect: sentences that end in a comma plus "not", "never" or "no" and a short noun phrase (`, not a…`, `, no una…`, `, mai un…`, `, no un…`, `, nunca…`). Three or more in a file is the signal.
 - Exceptions: legal and safety notices, a single methodological warning next to the figure it qualifies.
+
+### W-19 · Quotation marks as habit · high
+
+- What: angled quotes « » and curly quotes “ ” wrapped around button names, labels, titles, product names, terms and scare quotes.
+- Why: people rarely type typographic quotes, and almost never around every name they mention. A paragraph with several pairs of « » or “ ” reads as generated at once, in any language.
+- Bad → good: "Clica «Desa» i torna a «Cursos»." → "Clica Desa i torna a Cursos." "We created the “PROVA v2” course." → "We created a test course."
+- Detect: any « » or “ ” in prose. Two pairs or more in one paragraph is a clear tell.
+- Exceptions: a real quotation of someone's words, where plain straight quotes are enough, code and data.
 
 ## 3. Voice and filler
 

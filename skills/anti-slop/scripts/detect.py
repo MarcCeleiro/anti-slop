@@ -75,8 +75,9 @@ RULES = {
     # writing
     "W-01": ("high", "Comma splice"),
     "W-03": ("medium", "Choppy chain of short sentences"),
-    "W-10": ("medium", "Semicolon"),
-    "W-11": ("medium", "Em dash habit"),
+    "W-10": ("high", "Semicolon"),
+    "W-11": ("high", "Em dash in prose"),
+    "W-19": ("high", "Quotation marks as habit"),
     "W-12": ("medium", "Colon hinge"),
     "W-13": ("high", "Negative parallelism"),
     "W-18": ("medium", "Reflex caveat tail"),
@@ -103,7 +104,6 @@ RULES = {
     "CA-02": ("high", "Calque from English (ca)"),
     "CA-03": ("medium", "Calque from Spanish (ca)"),
     "CA-04": ("medium", "Gerund of posteriority (ca)"),
-    "CA-05": ("low", "Straight quotes (ca)"),
     "CA-08": ("medium", "Mixed action label forms (ca)"),
     "CA-11": ("low", "Bureaucratic verb (ca)"),
     "CA-13": ("low", "Anglicism in interface (ca)"),
@@ -650,8 +650,11 @@ def check_text(u: Unit, lang, add, file_lang):
                 add("W-10", u.line, "Semicolon in prose", s)
                 break
     dashes = len(re.findall(r"—|\s–\s|\s--\s", plain))
-    if dashes >= 2 and not plain.lstrip().startswith(("—", "–")):
-        add("W-11", u.line, f"{dashes} dashes in one paragraph", plain)
+    if dashes and not plain.lstrip().startswith(("—", "–")):
+        add("W-11", u.line, f"{dashes} em dash(es) in prose", plain)
+    quotes = len(re.findall(r"«[^»\n]{1,120}»|“[^”\n]{1,120}”", plain))
+    if quotes:
+        add("W-19", u.line, f"{quotes} pair(s) of « » or “ ” quotes", plain)
     for s in sentences(plain):
         m = re.search(r"([^:]{3,}):\s+([^:]+)$", s)
         if m and not re.search(r"https?$|\d$", m.group(1)):
@@ -701,8 +704,6 @@ def check_text(u: Unit, lang, add, file_lang):
             if s.endswith("?") and "¿" not in s and not (file_lang == "ca" and not re.search(r"[áñ¡]|ción\b", s, re.I)):
                 add("ES-04", u.line, "Question without ¿", s)
                 break
-    if lang in ("ca", "es") and u.kind != "heading" and re.search(r"(?<![=\w])\"[A-Za-zÀ-ÿ][^\"]{1,60}\"", plain) and file_kind_prose[0]:
-        add("CA-05" if lang == "ca" else "ES-04", u.line, "Straight double quotes in prose", plain)
     if lang == "en" and len(INTENS.findall(plain)) >= 3:
         add("EN-04", u.line, "Three or more intensifier adverbs", plain)
     if len(re.findall(r"\*\*[^*]+\*\*", t)) >= 3 and u.kind == "para":

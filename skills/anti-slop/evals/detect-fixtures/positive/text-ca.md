@@ -1,4 +1,4 @@
-<!-- expect: W-01 W-10 W-13 W-21 W-26 W-29 W-30 W-33 W-32 CA-02 CA-03 CA-04 W-03 W-12 -->
+<!-- expect: W-01 W-10 W-13 W-21 W-26 W-29 W-30 W-33 W-32 CA-02 CA-03 CA-04 W-03 W-12 W-11 W-19 -->
 # Les receptes, plat per plat
 
 ## 2 coses a tenir en compte a la cuina
@@ -18,3 +18,5 @@ El museu es va inaugurar el 2024, convertint-se en el primer equipament del barr
 La biblioteca obre a les nou. Els dissabtes no. El bar sí.
 
 Hem revisat totes les pàgines del lloc web: el formulari de contacte encara envia els correus a una adreça antiga.
+
+Per entrar-hi, obre «Usuaris» i clica «Switch To» al costat de l'alumne — la sessió canvia a l'instant.
